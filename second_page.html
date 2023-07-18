@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10cm;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I HAVE FOUND A SOLUTION</h1>
+    <p style="margin-top: 10cm;">Here is your problem's solution:</p>
+    <button id="solutionBtn">Solution</button>
+
+    <script>
+      // Second Page Logic
+      const solutionBtn = document.getElementById("solutionBtn");
+      solutionBtn.addEventListener("click", () => {
+        // Play the video with sound
+        // Replace 'your_video.mp4' with the actual filename of your video
+        const video = new Audio("your_video.mp4");
+        video.play();
+      });
+    </script>
+  </body>
+</html>
+

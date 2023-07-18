@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10cm;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>THIS WEBSITE CAN FIX YOUR PROBLEM</h1>
+    <p style="margin-top: 6cm;">Write your problem:</p>
+    <textarea id="problem" style="margin-top: 1cm; width: 300px; height: 100px;"></textarea>
+    <br />
+    <button id="submitBtn">Submit</button>
+
+    <script>
+      // First Page Logic
+      const submitBtn = document.getElementById("submitBtn");
+      submitBtn.addEventListener("click", () => {
+        const problem = document.getElementById("problem").value;
+        // Perform necessary actions with the problem, e.g., send it to the server
+        // Redirect to the second page
+        window.location.href = "second_page.html";
+      });
+    </script>
+  </body>
+</html>
